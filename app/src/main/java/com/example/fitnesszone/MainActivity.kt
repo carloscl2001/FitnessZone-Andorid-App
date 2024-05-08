@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkManager
 import com.example.fitnesszone.databinding.ActivityMainBinding
-import com.example.fitnesszone.ui.reservas.ReservasFragment
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
