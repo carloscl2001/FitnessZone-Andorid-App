@@ -12,7 +12,7 @@
     <string name="menu_reservas">Reservas</string>
     <string name="menu_localizacion">Localización</string>
     <string name="appwidget_text">Noticias</string>
-    <string name="add_widget">Añadir un nuevo widget</string>
-    <string name="app_widget_description">Esta es la descripción del widget</string>
+    <string name="add_widget">Últimas noticias</string>
+    <string name="app_widget_description">Widget de FitnessZone para estar informado de las últimas noticias</string>
 
 </resources>
