@@ -11,7 +11,11 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.work.PeriodicWorkRequest
+import androidx.work.WorkManager
 import com.example.fitnesszone.databinding.ActivityMainBinding
+import com.example.fitnesszone.ui.reservas.ReservasFragment
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,16 +35,30 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()
         }
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home, R.id.nav_salas, R.id.nav_reservas, R.id.nav_localizacion
             ), drawerLayout
         )
+
+        // Verifica si se ha pasado un nombre de fragmento como extra en el intento
+        val fragmento = intent.getStringExtra("fragmento")
+        if (fragmento != null && fragmento == "ReservaFragment") {
+            // Abre el fragmento de reserva
+            navController.navigate(R.id.nav_reservas)
+        }
+
+        //Actualiza el texto cada del widget cada minuto
+        val updateRequest = PeriodicWorkRequest.Builder(WorkerActualizarWidget::class.java, 15, TimeUnit.MINUTES)
+            .setInitialDelay(15, TimeUnit.MINUTES)  // El intervalo de tiempo mínimo para WorkManager es de 15 minutos.
+            .build()
+        WorkManager.getInstance(this).enqueue(updateRequest)
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
@@ -55,4 +73,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
 }

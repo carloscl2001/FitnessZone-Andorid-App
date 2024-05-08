@@ -18,7 +18,7 @@ import kotlin.random.Random
 // Clase utilitaria para funciones compartidas.
 object Utilidades {
     fun generarTextoAleatorio(): String {
-        val opciones = arrayOf("Hola", "¡Bienvenido!", "¿Qué tal?", "¡Hola mundo!")
+        val opciones = arrayOf("¡Semana de descuentos!", "¡Bienvenido!", "¡Muy pronto: nuevas salas!", "¡Lanzamiento exclusivo de TRX para principiantes!")
         return opciones[Random.nextInt(opciones.size)]
     }
 }
@@ -37,6 +37,7 @@ class MiWidgetDinamico : AppWidgetProvider() {
     fun actualizaWidget(contexto: Context, administradorAppWidget: AppWidgetManager, idAppWidget: Int){
         // Crea un intento para abrir MainActivity cuando se haga clic en el widget.
         val intento = Intent(contexto, MainActivity::class.java)
+        intento.putExtra("fragmento", "ReservaFragment")
         // Crea un PendingIntent que envuelve nuestro intento, necesario para que el clic funcione.
         val intencionPendiente = PendingIntent.getActivity(contexto, 0, intento, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
