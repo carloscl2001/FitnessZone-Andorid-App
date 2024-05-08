@@ -1,9 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFEB3B"
+    android:background="@color/naranja"
     android:orientation="horizontal">
     <ImageView
+        android:contentDescription="@string/app_name"
         android:id="@+id/logo_widget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +19,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:text="Texto inicial"/>
+        android:text="@string/add_widget"/>
 
 
 </LinearLayout>
