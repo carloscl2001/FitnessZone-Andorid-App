@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_localizacion">Localizacion</string>
+    <string name="menu_reserva">Reserva</string>
+    <string name="menu_salas">Salas</string>
+    <string name="nombre_pagina">FITNESSZONE</string>
+    <string name="informacionPag">La mejor app de reserva de salas</string>
+    <string name="nombre_programadores">Roberto Rivero Díaz\nCarlos Antonio Cortès Lora</string>
+    <string name="Materiales">Materiales</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="tituloSala">Titulo</string>
+    <string name="Cantidad">Cantidad</string>
+    <string name="BotonReserva">Nueva Reserva</string>
+    <string name="textoCancelar">Cancelar reserva</string>
+    <string name="textoModificar">Modificar Reserva</string>
+    <string name="textoNickname">Nickname</string>
+    <string name="textoVer">Ver Reserva</string>
+</resources>

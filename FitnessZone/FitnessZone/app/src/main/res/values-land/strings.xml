@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_localizacion">Localizacion</string>
+    <string name="menu_reserva">Reserva</string>
+    <string name="menu_salas">Salas</string>
+    <string name="nombre_pagina">FITNESSZONE</string>
+    <string name="informacionPag">La mejor app de reserva de salas</string>
+    <string name="nombre_programadores">Roberto Rivero Díaz\nCarlos Antonio Cortès Lora</string>
+    <string name="Materiales">Materiales</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="tituloSala">Titulo</string>
+    <string name="Cantidad">Cantidad</string>
+    <string name="Precio">Precio</string>
+    <string name="Capacidad">Capacidad</string>
+    <string name="BotonReserva">Nueva Reserva</string>
+    <string name="textoFecha">Fecha:</string>
+    <string name="textoHora">Hora:</string>
+    <string name="textoCancelar">Cancelar reserva</string>
+    <string name="textoModificar">Modificar Reserva</string>
+    <string name="textoUsuario">Usuario:</string>
+    <string name="textoNickname">Nickname</string>
+    <string name="textoVer">Ver Reserva</string>
+    <string name="textoNicknamePost">Nickname:</string>
+    <string name="textoNumCarnetPost">Numero Carnet:</string>
+    <string name="textoTelefonoPost">Telefono:</string>
+    <string name="textoEmailPost">Email:</string>
+    <string name="textoFechaPost">Fecha:</string>
+    <string name="textoHoraPost">Hora:</string>
+    <string name="post">Enviar Reserva</string>
+    <string name="textoComentarioPost">Comentario:</string>
+    <string name="textoNumPersPost">Numero de personas:</string>
+    <string name="menu_alta">Realizar Reserva</string>
+    <string name="textoSalaPost">Sala:</string>
+    <string name="seleccionarSala">Seleccionar Sala</string>
+    <string name="menu_Ver">Ver Reserva</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="modificar">Modificar</string>
+    <string name="menu_Modificar">Modificar Reserva</string>
+    <string name="textoNickname2">Nickname:</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_salas">
+
+    <fragment
+        android:id="@+id/nav_salas"
+        android:name="com.example.fitnesszone.ui.salas.SalasFragment"
+        android:label="@string/menu_salas"
+        tools:layout="@layout/fragment_salas" />
+
+    <fragment
+        android:id="@+id/nav_reserva"
+        android:name="com.example.fitnesszone.ui.reserva.ReservaFragment"
+        android:label="@string/menu_reserva"
+        tools:layout="@layout/fragment_reserva" />
+
+    <fragment
+        android:id="@+id/altaFragment"
+        android:name="com.example.fitnesszone.ui.reserva.AltaFragment"
+        android:label="@string/menu_alta"
+        tools:layout="@layout/fragment_alta" />
+
+    <fragment
+        android:id="@+id/verFragment"
+        android:name="com.example.fitnesszone.ui.reserva.VerFragment"
+        android:label="@string/menu_Ver"
+        tools:layout="@layout/fragment_ver" />
+    <fragment
+        android:id="@+id/modificarFragment"
+        android:name="com.example.fitnesszone.ui.reserva.ModificarFragment"
+        android:label="@string/menu_Modificar"
+        tools:layout="@layout/fragment_modificar" />
+
+    <fragment
+        android:id="@+id/nav_localizacion"
+        android:name="com.example.fitnesszone.ui.localizacion.LocalizacionFragment"
+        android:label="@string/menu_localizacion"
+        tools:layout="@layout/fragment_localizacion" />
+</navigation>

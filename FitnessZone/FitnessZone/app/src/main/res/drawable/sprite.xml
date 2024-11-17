@@ -1,0 +1,10 @@
+<!-- Definición del elemento raíz para una lista de animaciones. Esta se utiliza para animaciones de frame por frame. -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">  <!-- 'oneshot="false"' indica que la animación se repetirá indefinidamente. -->
+
+    <!-- Cada 'item' representa un frame de la animación. -->
+    <item android:drawable="@drawable/img1" android:duration="200" /> <!-- Primer frame, mostrado por 75 milisegundos. -->
+    <item android:drawable="@drawable/img2" android:duration="200" /><!-- Segundo frame, mostrado por 75 milisegundos. -->
+    <item android:drawable="@drawable/img4" android:duration="200" /> <!-- Tercer frame, mostrado por 75 milisegundos. -->
+    <item android:drawable="@drawable/img3" android:duration="200" /> <!-- Cuarto frame, mostrado por 75 milisegundos. -->
+    </animation-list>

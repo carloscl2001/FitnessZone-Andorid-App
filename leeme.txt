@@ -1,0 +1,4 @@
+COSAS A MODFICAR
+
+En ApiServicios -> ID_PORT = IP_NUEVA
+En network_security_config ->  <domain includeSubdomains="true">IP_NUEVA</domain>
